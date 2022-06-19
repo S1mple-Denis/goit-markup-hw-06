@@ -566,6 +566,21 @@ color: var(--white-text-colour);
 .futer-link-logo {
   fill: #fff;
 }
+
+.futer-subscribe {
+  margin-left: 93px;
+}
+
+.futer-subscribe-text {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+
 /* модальное окно */
 .backdrop {
   width: 100%;
@@ -619,7 +634,77 @@ color: var(--white-text-colour);
 .no-scroll {
   overflow: hidden;
 }
+.visitor-contacts {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal-title {
+padding-top: 40px;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom: 12px;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.visitor-contacts {
+margin-left: auto;
+margin-right: auto;
+}
 
+.visitor-group {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.visitor-group label {
+  margin-bottom: 4px;
+}
+
+.visitor-group input {
+  
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.visitor-group input::placeholder {
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+  display: block;
+  align-items: center;
+}
+.visitor-group input [type='çheckbox'] {
+
+}
+
+.input-icon {
+position: absolute;
+width: 18px;
+height: 18px;
+top: 50%;
+left: 15px;
+transform: translateY(12%);
+background-color: red;
+}
+
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
 /* страница портфолио */
 .portfolio-main {
   background-color: var(--white-text-colour);
