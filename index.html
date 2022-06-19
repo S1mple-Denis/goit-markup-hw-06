@@ -460,39 +460,45 @@
         <form class="visitor-contacts">
           <div class="visitor-group">
             <label class="visitor-field" for="name">Имя</label>
-            <input class="visitor-input name" type="text" name="name" id="name" />
-          <span class="input-icon">
-
-          </span>
+            <input
+              class="visitor-input name"
+              type="text"
+              name="name"
+              id="name"
+            />
+            <svg class="input-icon">
+              <use href="./image/symbol-iconsform.svg#icon-person"></use>
+            </svg>
           </div>
           <div class="visitor-group">
             <label class="visitor-field" for="tel">Телефон</label>
-            <input
-              class="visitor-input"
-              type="tel"
-              name="tel"
-              id="tel"
-            />
+            <input class="visitor-input" type="tel" name="tel" id="tel" />
+            <svg class="input-icon">
+              <use href="./image/symbol-iconsform.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="visitor-group">
             <label class="visitor-field" for="mail">Почта</label>
             <input class="visitor-input" type="email" name="mail" id="mail" />
+            <svg class="input-icon">
+              <use href="./image/symbol-iconsform.svg#icon-email"></use>
+            </svg>
           </div>
           <div class="visitor-group">
-          <label for="comment">Комментарий</label>
-          <textarea
-            name="comment"
-            id="comment"
-            rows="10"
-            placeholder="Введите текст"
-          ></textarea>
-        </div>
-        <div class="visitor-group checkbox">
-          <input type="checkbox" name="policy" />
-          <label for="policy"
-            >Соглашаюсь с рассылкой и принимаю Условия договора</label
-          >
-        </div>
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="visitor-group checkbox">
+            <input type="checkbox" name="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+          </div>
 
           <button type="submit">Отправить</button>
         </form>
