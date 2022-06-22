@@ -575,7 +575,65 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+.futer-mail-form {
+  display: flex;
+  margin-top: 20px;
+  border: none;
+}
+.submit-input {
+  /* position: absolute; */
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  padding-left: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.submit-input:hover,
+.submit-input:focus {
+  border-color: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
+}
 
+.footer-submit-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: var(--accent-colour);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  padding-left: 29px;
+  color: #ffffff;
+  fill: currentColor;
+}
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+  background-color: var(--bg-page-colour);
+  color: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
+}
+
+.icon-send {
+  position: absolute;
+  background-size: contain;
+  right: 28px;
+  margin-left: 10px;
+}
+
+.footer-submit-button:hover + .icon-send {
+  fill: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
+}
 /* модальное окно */
 .backdrop {
   width: 100%;
@@ -594,6 +652,22 @@ img {
   position: absolute;
   transition: opacity 250ms var(--transition-cubic);
 }
+
+.close-btn-logo:hover,
+.close-btn-logo:focus {
+  fill: #2196f3;
+}
+.licence {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-left: 3px;
+  text-decoration-line: underline;
+  color: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
+}
+
 .modal {
   min-width: 528px;
   min-height: 581px;
@@ -675,10 +749,29 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.visitor-input:hover ~ textarea {
+  border-color: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
+}
+.checkbox-point {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
 
 .checkbox {
-  display: block;
-  align-items: center;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .visitor-group input [type="çheckbox"] {
 }
@@ -692,13 +785,69 @@ img {
   transform: translateY(-50%%);
 }
 
-.visitor-input:focus ~ .input-icon {
+.visitor-input:focus ~ .input-icon,
+.visitor-input:hover ~ .input-icon,
+#comment:hover,
+#comment:focus {
   fill: var(--accent-colour);
+  border-color: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
 }
+
+.visitor-input:focus,
+.visitor-input:hover {
+  border-color: var(--accent-colour);
+  transition: fill 250ms var(--transition-cubic);
+}
+
 textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+}
+
+.icon-checkbox {
+  display: inline-block;
+  height: 15px;
+  width: 16px;
+  margin-right: 8.38px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-colour);
+  background-image: url(../image/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-colour);
+  border-radius: 2px;
+}
+
+.submit-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2196f3;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #188ce8;
+  transition: fill 250ms var(--transition-cubic);
 }
 /* страница портфолио */
 .portfolio-main {
