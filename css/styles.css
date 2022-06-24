@@ -727,6 +727,7 @@ img {
 }
 .visitor-group label {
   margin-bottom: 4px;
+  font-size: 12px;
 }
 
 .visitor-group input {
@@ -799,6 +800,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  height: 120px;
 }
 
 .icon-checkbox {
